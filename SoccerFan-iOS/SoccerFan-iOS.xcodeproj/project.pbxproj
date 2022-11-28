@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6800D043291B7F4C005BA24E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D042291B7F4C005BA24E /* AppDelegate.swift */; };
+		6800D04F291B7F4D005BA24E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6800D04D291B7F4D005BA24E /* LaunchScreen.storyboard */; };
+		6800D05A291B7F4E005BA24E /* SoccerFan_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D059291B7F4E005BA24E /* SoccerFan_iOSTests.swift */; };
+		6800D064291B7F4E005BA24E /* SoccerFan_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D063291B7F4E005BA24E /* SoccerFan_iOSUITests.swift */; };
+		6800D066291B7F4E005BA24E /* SoccerFan_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D065291B7F4E005BA24E /* SoccerFan_iOSUITestsLaunchTests.swift */; };
+		6800D09D291B853C005BA24E /* ApplicationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D097291B853B005BA24E /* ApplicationFlowCoordinator.swift */; };
+		6800D09E291B853C005BA24E /* ApplicationFlowCoordinatorDependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D098291B853B005BA24E /* ApplicationFlowCoordinatorDependencyProvider.swift */; };
+		6800D09F291B853C005BA24E /* AuthenticationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D099291B853B005BA24E /* AuthenticationFlowCoordinator.swift */; };
+		6800D0A0291B853C005BA24E /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D09A291B853B005BA24E /* MainFlowCoordinator.swift */; };
+		6800D0A1291B853C005BA24E /* ApplicationComponentsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D09B291B853C005BA24E /* ApplicationComponentsFactory.swift */; };
+		6800D0A2291B853C005BA24E /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D09C291B853C005BA24E /* FlowCoordinator.swift */; };
+		6800D0A4291B8575005BA24E /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6800D0A3291B8575005BA24E /* Services.framework */; };
+		6800D0BB291B865F005BA24E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D0BA291B865E005BA24E /* Constants.swift */; };
+		6800D0C0291B8691005BA24E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D0BF291B8691005BA24E /* LoginViewController.swift */; };
+		6800D0C3291B86B5005BA24E /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D0C2291B86B5005BA24E /* MainTabbarController.swift */; };
+		6800D0C6291B86CA005BA24E /* StandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D0C5291B86CA005BA24E /* StandingsViewController.swift */; };
+		6800D0CC291B86E2005BA24E /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D0C8291B86E2005BA24E /* LeaguesViewController.swift */; };
+		6800D0CD291B86E2005BA24E /* LeaguesViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D0C9291B86E2005BA24E /* LeaguesViewModelType.swift */; };
+		6800D0CE291B86E2005BA24E /* LeaguesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D0CA291B86E2005BA24E /* LeaguesNavigator.swift */; };
+		6800D0CF291B86E2005BA24E /* LeaguesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D0CB291B86E2005BA24E /* LeaguesViewModel.swift */; };
+		6800D0D2291B8704005BA24E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6800D0D1291B8704005BA24E /* BaseViewController.swift */; };
+		68432DF2291B8777001AB7F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68432DF1291B8777001AB7F2 /* Assets.xcassets */; };
+		68432DF4291B8CFE001AB7F2 /* StandingsViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68432DF3291B8CFE001AB7F2 /* StandingsViewModelType.swift */; };
+		686A88812934542C00828837 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686A88802934542C00828837 /* Utils.framework */; };
+		68DA4F97291C99A9002A271C /* StandingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DA4F96291C99A9002A271C /* StandingsViewModel.swift */; };
+		68DA4F99291CC72D002A271C /* UseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DA4F98291CC72D002A271C /* UseCases.framework */; };
+		68E024BA2921F679000BFA51 /* StandingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E024B92921F679000BFA51 /* StandingViewModel.swift */; };
+		68E024BD292212B1000BFA51 /* ClubRankingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E024BC292212B1000BFA51 /* ClubRankingViewCell.swift */; };
+		FB65B340E5EDA0F1E3807828 /* Pods_SoccerFan_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145F6D0484CD5247DE62863D /* Pods_SoccerFan_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6800D056291B7F4E005BA24E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6800D037291B7F4C005BA24E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6800D03E291B7F4C005BA24E;
+			remoteInfo = "SoccerFan-iOS";
+		};
+		6800D060291B7F4E005BA24E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6800D037291B7F4C005BA24E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6800D03E291B7F4C005BA24E;
+			remoteInfo = "SoccerFan-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12C4615383F7A4BC3835514B /* Pods-SoccerFan-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoccerFan-iOS.release.xcconfig"; path = "Target Support Files/Pods-SoccerFan-iOS/Pods-SoccerFan-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		145F6D0484CD5247DE62863D /* Pods_SoccerFan_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoccerFan_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6800D03F291B7F4C005BA24E /* SoccerFan-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoccerFan-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6800D042291B7F4C005BA24E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6800D04E291B7F4D005BA24E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6800D050291B7F4D005BA24E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6800D055291B7F4E005BA24E /* SoccerFan-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SoccerFan-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6800D059291B7F4E005BA24E /* SoccerFan_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerFan_iOSTests.swift; sourceTree = "<group>"; };
+		6800D05F291B7F4E005BA24E /* SoccerFan-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SoccerFan-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6800D063291B7F4E005BA24E /* SoccerFan_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerFan_iOSUITests.swift; sourceTree = "<group>"; };
+		6800D065291B7F4E005BA24E /* SoccerFan_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerFan_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6800D097291B853B005BA24E /* ApplicationFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinator.swift; sourceTree = "<group>"; };
+		6800D098291B853B005BA24E /* ApplicationFlowCoordinatorDependencyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationFlowCoordinatorDependencyProvider.swift; sourceTree = "<group>"; };
+		6800D099291B853B005BA24E /* AuthenticationFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationFlowCoordinator.swift; sourceTree = "<group>"; };
+		6800D09A291B853B005BA24E /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
+		6800D09B291B853C005BA24E /* ApplicationComponentsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationComponentsFactory.swift; sourceTree = "<group>"; };
+		6800D09C291B853C005BA24E /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		6800D0A3291B8575005BA24E /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6800D0BA291B865E005BA24E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6800D0BF291B8691005BA24E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6800D0C2291B86B5005BA24E /* MainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
+		6800D0C5291B86CA005BA24E /* StandingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandingsViewController.swift; sourceTree = "<group>"; };
+		6800D0C8291B86E2005BA24E /* LeaguesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
+		6800D0C9291B86E2005BA24E /* LeaguesViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaguesViewModelType.swift; sourceTree = "<group>"; };
+		6800D0CA291B86E2005BA24E /* LeaguesNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaguesNavigator.swift; sourceTree = "<group>"; };
+		6800D0CB291B86E2005BA24E /* LeaguesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaguesViewModel.swift; sourceTree = "<group>"; };
+		6800D0D1291B8704005BA24E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		68432DF1291B8777001AB7F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68432DF3291B8CFE001AB7F2 /* StandingsViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsViewModelType.swift; sourceTree = "<group>"; };
+		686A88802934542C00828837 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68DA4F96291C99A9002A271C /* StandingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsViewModel.swift; sourceTree = "<group>"; };
+		68DA4F98291CC72D002A271C /* UseCases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UseCases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68E024B92921F679000BFA51 /* StandingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingViewModel.swift; sourceTree = "<group>"; };
+		68E024BC292212B1000BFA51 /* ClubRankingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubRankingViewCell.swift; sourceTree = "<group>"; };
+		E3C2CC5528CB7F9D5EEAF541 /* Pods-SoccerFan-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoccerFan-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SoccerFan-iOS/Pods-SoccerFan-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6800D03C291B7F4C005BA24E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686A88812934542C00828837 /* Utils.framework in Frameworks */,
+				68DA4F99291CC72D002A271C /* UseCases.framework in Frameworks */,
+				6800D0A4291B8575005BA24E /* Services.framework in Frameworks */,
+				FB65B340E5EDA0F1E3807828 /* Pods_SoccerFan_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6800D052291B7F4E005BA24E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6800D05C291B7F4E005BA24E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F8BA6C9E697DA40CF62E5C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3C2CC5528CB7F9D5EEAF541 /* Pods-SoccerFan-iOS.debug.xcconfig */,
+				12C4615383F7A4BC3835514B /* Pods-SoccerFan-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		6800D036291B7F4C005BA24E = {
+			isa = PBXGroup;
+			children = (
+				6800D041291B7F4C005BA24E /* SoccerFan-iOS */,
+				6800D058291B7F4E005BA24E /* SoccerFan-iOSTests */,
+				6800D062291B7F4E005BA24E /* SoccerFan-iOSUITests */,
+				6800D040291B7F4C005BA24E /* Products */,
+				3F8BA6C9E697DA40CF62E5C4 /* Pods */,
+				738B61837C1E187051BE4B03 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6800D040291B7F4C005BA24E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6800D03F291B7F4C005BA24E /* SoccerFan-iOS.app */,
+				6800D055291B7F4E005BA24E /* SoccerFan-iOSTests.xctest */,
+				6800D05F291B7F4E005BA24E /* SoccerFan-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6800D041291B7F4C005BA24E /* SoccerFan-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6800D094291B84C0005BA24E /* Sources */,
+				6800D095291B84D2005BA24E /* Resources */,
+				6800D050291B7F4D005BA24E /* Info.plist */,
+			);
+			path = "SoccerFan-iOS";
+			sourceTree = "<group>";
+		};
+		6800D058291B7F4E005BA24E /* SoccerFan-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6800D059291B7F4E005BA24E /* SoccerFan_iOSTests.swift */,
+			);
+			path = "SoccerFan-iOSTests";
+			sourceTree = "<group>";
+		};
+		6800D062291B7F4E005BA24E /* SoccerFan-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6800D063291B7F4E005BA24E /* SoccerFan_iOSUITests.swift */,
+				6800D065291B7F4E005BA24E /* SoccerFan_iOSUITestsLaunchTests.swift */,
+			);
+			path = "SoccerFan-iOSUITests";
+			sourceTree = "<group>";
+		};
+		6800D094291B84C0005BA24E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6800D042291B7F4C005BA24E /* AppDelegate.swift */,
+				6800D096291B8507005BA24E /* FlowCoordinators */,
+				6800D0B9291B8654005BA24E /* Constants */,
+				6800D0D0291B86F6005BA24E /* Base */,
+				6800D0BC291B8674005BA24E /* Screens */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6800D095291B84D2005BA24E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68432DF1291B8777001AB7F2 /* Assets.xcassets */,
+				6800D04D291B7F4D005BA24E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6800D096291B8507005BA24E /* FlowCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				6800D09C291B853C005BA24E /* FlowCoordinator.swift */,
+				6800D09B291B853C005BA24E /* ApplicationComponentsFactory.swift */,
+				6800D097291B853B005BA24E /* ApplicationFlowCoordinator.swift */,
+				6800D098291B853B005BA24E /* ApplicationFlowCoordinatorDependencyProvider.swift */,
+				6800D099291B853B005BA24E /* AuthenticationFlowCoordinator.swift */,
+				6800D09A291B853B005BA24E /* MainFlowCoordinator.swift */,
+			);
+			path = FlowCoordinators;
+			sourceTree = "<group>";
+		};
+		6800D0B9291B8654005BA24E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6800D0BA291B865E005BA24E /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6800D0BC291B8674005BA24E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6800D0BD291B867E005BA24E /* Authentication */,
+				6800D0C1291B869D005BA24E /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6800D0BD291B867E005BA24E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6800D0BE291B868A005BA24E /* Login */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6800D0BE291B868A005BA24E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6800D0BF291B8691005BA24E /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6800D0C1291B869D005BA24E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6800D0C2291B86B5005BA24E /* MainTabbarController.swift */,
+				6800D0C7291B86D6005BA24E /* Leagues */,
+				6800D0C4291B86BF005BA24E /* Standings */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6800D0C4291B86BF005BA24E /* Standings */ = {
+			isa = PBXGroup;
+			children = (
+				6800D0C5291B86CA005BA24E /* StandingsViewController.swift */,
+				68432DF3291B8CFE001AB7F2 /* StandingsViewModelType.swift */,
+				68DA4F96291C99A9002A271C /* StandingsViewModel.swift */,
+				68E024B92921F679000BFA51 /* StandingViewModel.swift */,
+				68E024E229222E84000BFA51 /* Views */,
+				68E024BB29221263000BFA51 /* Cells */,
+			);
+			path = Standings;
+			sourceTree = "<group>";
+		};
+		6800D0C7291B86D6005BA24E /* Leagues */ = {
+			isa = PBXGroup;
+			children = (
+				6800D0CA291B86E2005BA24E /* LeaguesNavigator.swift */,
+				6800D0C8291B86E2005BA24E /* LeaguesViewController.swift */,
+				6800D0C9291B86E2005BA24E /* LeaguesViewModelType.swift */,
+				6800D0CB291B86E2005BA24E /* LeaguesViewModel.swift */,
+			);
+			path = Leagues;
+			sourceTree = "<group>";
+		};
+		6800D0D0291B86F6005BA24E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6800D0D1291B8704005BA24E /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		68E024BB29221263000BFA51 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				68E024BC292212B1000BFA51 /* ClubRankingViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		68E024E229222E84000BFA51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		738B61837C1E187051BE4B03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				686A88802934542C00828837 /* Utils.framework */,
+				68DA4F98291CC72D002A271C /* UseCases.framework */,
+				6800D0A3291B8575005BA24E /* Services.framework */,
+				145F6D0484CD5247DE62863D /* Pods_SoccerFan_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6800D03E291B7F4C005BA24E /* SoccerFan-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6800D069291B7F4E005BA24E /* Build configuration list for PBXNativeTarget "SoccerFan-iOS" */;
+			buildPhases = (
+				B20C882F756136384E60285C /* [CP] Check Pods Manifest.lock */,
+				6800D03B291B7F4C005BA24E /* Sources */,
+				6800D03C291B7F4C005BA24E /* Frameworks */,
+				6800D03D291B7F4C005BA24E /* Resources */,
+				91BB19FBD35A506FC2757750 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SoccerFan-iOS";
+			productName = "SoccerFan-iOS";
+			productReference = 6800D03F291B7F4C005BA24E /* SoccerFan-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6800D054291B7F4E005BA24E /* SoccerFan-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6800D06C291B7F4E005BA24E /* Build configuration list for PBXNativeTarget "SoccerFan-iOSTests" */;
+			buildPhases = (
+				6800D051291B7F4E005BA24E /* Sources */,
+				6800D052291B7F4E005BA24E /* Frameworks */,
+				6800D053291B7F4E005BA24E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6800D057291B7F4E005BA24E /* PBXTargetDependency */,
+			);
+			name = "SoccerFan-iOSTests";
+			productName = "SoccerFan-iOSTests";
+			productReference = 6800D055291B7F4E005BA24E /* SoccerFan-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6800D05E291B7F4E005BA24E /* SoccerFan-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6800D06F291B7F4E005BA24E /* Build configuration list for PBXNativeTarget "SoccerFan-iOSUITests" */;
+			buildPhases = (
+				6800D05B291B7F4E005BA24E /* Sources */,
+				6800D05C291B7F4E005BA24E /* Frameworks */,
+				6800D05D291B7F4E005BA24E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6800D061291B7F4E005BA24E /* PBXTargetDependency */,
+			);
+			name = "SoccerFan-iOSUITests";
+			productName = "SoccerFan-iOSUITests";
+			productReference = 6800D05F291B7F4E005BA24E /* SoccerFan-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6800D037291B7F4C005BA24E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					6800D03E291B7F4C005BA24E = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					6800D054291B7F4E005BA24E = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 6800D03E291B7F4C005BA24E;
+					};
+					6800D05E291B7F4E005BA24E = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 6800D03E291B7F4C005BA24E;
+					};
+				};
+			};
+			buildConfigurationList = 6800D03A291B7F4C005BA24E /* Build configuration list for PBXProject "SoccerFan-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6800D036291B7F4C005BA24E;
+			productRefGroup = 6800D040291B7F4C005BA24E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6800D03E291B7F4C005BA24E /* SoccerFan-iOS */,
+				6800D054291B7F4E005BA24E /* SoccerFan-iOSTests */,
+				6800D05E291B7F4E005BA24E /* SoccerFan-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6800D03D291B7F4C005BA24E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68432DF2291B8777001AB7F2 /* Assets.xcassets in Resources */,
+				6800D04F291B7F4D005BA24E /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6800D053291B7F4E005BA24E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6800D05D291B7F4E005BA24E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91BB19FBD35A506FC2757750 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoccerFan-iOS/Pods-SoccerFan-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SoccerFan-iOS/Pods-SoccerFan-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SoccerFan-iOS/Pods-SoccerFan-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B20C882F756136384E60285C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SoccerFan-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6800D03B291B7F4C005BA24E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68DA4F97291C99A9002A271C /* StandingsViewModel.swift in Sources */,
+				6800D0CE291B86E2005BA24E /* LeaguesNavigator.swift in Sources */,
+				6800D0C0291B8691005BA24E /* LoginViewController.swift in Sources */,
+				6800D09D291B853C005BA24E /* ApplicationFlowCoordinator.swift in Sources */,
+				6800D0C3291B86B5005BA24E /* MainTabbarController.swift in Sources */,
+				6800D0A2291B853C005BA24E /* FlowCoordinator.swift in Sources */,
+				6800D043291B7F4C005BA24E /* AppDelegate.swift in Sources */,
+				68E024BA2921F679000BFA51 /* StandingViewModel.swift in Sources */,
+				6800D09F291B853C005BA24E /* AuthenticationFlowCoordinator.swift in Sources */,
+				6800D0C6291B86CA005BA24E /* StandingsViewController.swift in Sources */,
+				6800D0CF291B86E2005BA24E /* LeaguesViewModel.swift in Sources */,
+				6800D0A1291B853C005BA24E /* ApplicationComponentsFactory.swift in Sources */,
+				6800D0A0291B853C005BA24E /* MainFlowCoordinator.swift in Sources */,
+				6800D09E291B853C005BA24E /* ApplicationFlowCoordinatorDependencyProvider.swift in Sources */,
+				6800D0BB291B865F005BA24E /* Constants.swift in Sources */,
+				68E024BD292212B1000BFA51 /* ClubRankingViewCell.swift in Sources */,
+				6800D0D2291B8704005BA24E /* BaseViewController.swift in Sources */,
+				68432DF4291B8CFE001AB7F2 /* StandingsViewModelType.swift in Sources */,
+				6800D0CC291B86E2005BA24E /* LeaguesViewController.swift in Sources */,
+				6800D0CD291B86E2005BA24E /* LeaguesViewModelType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6800D051291B7F4E005BA24E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6800D05A291B7F4E005BA24E /* SoccerFan_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6800D05B291B7F4E005BA24E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6800D064291B7F4E005BA24E /* SoccerFan_iOSUITests.swift in Sources */,
+				6800D066291B7F4E005BA24E /* SoccerFan_iOSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6800D057291B7F4E005BA24E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6800D03E291B7F4C005BA24E /* SoccerFan-iOS */;
+			targetProxy = 6800D056291B7F4E005BA24E /* PBXContainerItemProxy */;
+		};
+		6800D061291B7F4E005BA24E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6800D03E291B7F4C005BA24E /* SoccerFan-iOS */;
+			targetProxy = 6800D060291B7F4E005BA24E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6800D04D291B7F4D005BA24E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6800D04E291B7F4D005BA24E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6800D067291B7F4E005BA24E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6800D068291B7F4E005BA24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6800D06A291B7F4E005BA24E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C2CC5528CB7F9D5EEAF541 /* Pods-SoccerFan-iOS.debug.xcconfig */;
+			buildSettings = {
+				API_URL = "https://api-football-beta.p.rapidapi.com";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79BPQ6NDVU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SoccerFan-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuantang.SoccerFan-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6800D06B291B7F4E005BA24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C4615383F7A4BC3835514B /* Pods-SoccerFan-iOS.release.xcconfig */;
+			buildSettings = {
+				API_URL = "https://api-football-beta.p.rapidapi.com";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79BPQ6NDVU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SoccerFan-iOS/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuantang.SoccerFan-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6800D06D291B7F4E005BA24E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuantang.SoccerFan-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerFan-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoccerFan-iOS";
+			};
+			name = Debug;
+		};
+		6800D06E291B7F4E005BA24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuantang.SoccerFan-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerFan-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SoccerFan-iOS";
+			};
+			name = Release;
+		};
+		6800D070291B7F4E005BA24E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuantang.SoccerFan-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SoccerFan-iOS";
+			};
+			name = Debug;
+		};
+		6800D071291B7F4E005BA24E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuantang.SoccerFan-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SoccerFan-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6800D03A291B7F4C005BA24E /* Build configuration list for PBXProject "SoccerFan-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6800D067291B7F4E005BA24E /* Debug */,
+				6800D068291B7F4E005BA24E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6800D069291B7F4E005BA24E /* Build configuration list for PBXNativeTarget "SoccerFan-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6800D06A291B7F4E005BA24E /* Debug */,
+				6800D06B291B7F4E005BA24E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6800D06C291B7F4E005BA24E /* Build configuration list for PBXNativeTarget "SoccerFan-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6800D06D291B7F4E005BA24E /* Debug */,
+				6800D06E291B7F4E005BA24E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6800D06F291B7F4E005BA24E /* Build configuration list for PBXNativeTarget "SoccerFan-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6800D070291B7F4E005BA24E /* Debug */,
+				6800D071291B7F4E005BA24E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6800D037291B7F4C005BA24E /* Project object */;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>XRapidAPIKey</key>
+	<string>f50f55c64cmshc5e462f27e9ed1cp1f74ecjsn60e86d29dc8a</string>
+	<key>XRapidAPIHost</key>
+	<string>api-football-beta.p.rapidapi.com</string>
+</dict>
+</plist>
