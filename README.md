@@ -1,1 +1,3 @@
-# iOS_Combine_MVVM
+# Combine + UIKit + MVVM
+
+Sample project with Combine, UIKit and MVVM architecture
